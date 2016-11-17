@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.marie_helenebarkian.application_carte_postale.MainActivity"
+    android:background="@android:color/holo_green_light"
+    android:backgroundTint="@android:color/background_dark">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp"
+        android:id="@+id/Précédent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="116dp"
+        android:text="Précédent"
+        android:layout_width="200dp"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:text="Suivant"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Suivant"
+        android:layout_marginRight="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_alignBaseline="@+id/Précédent"
+        android:layout_alignBottom="@+id/Précédent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="Tapez votre texte ici"
+        android:id="@+id/Tapez votre texte ici"
+        android:layout_marginTop="71dp"
+        android:layout_height="300dp"
+        android:layout_width="400dp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:lineSpacingExtra="10sp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/spinner_background" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_plus"
+        android:id="@+id/Zoomer1"
+        android:layout_alignTop="@+id/Zoomer2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/background_light"
+        android:scrollbarSize="20dp"
+        android:elevation="15dp"
+        android:adjustViewBounds="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_minus"
+        android:id="@+id/Zoomer2"
+        android:layout_marginTop="54dp"
+        android:background="@android:color/background_light"
+        android:layout_below="@+id/Tapez votre texte ici"
+        android:layout_toLeftOf="@+id/Zoomer1"
+        android:layout_toStartOf="@+id/Zoomer1"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:scrollbarSize="20dp"
+        android:elevation="14dp" />
+
+    <TextView
+        android:text="Prix"
+        android:layout_width="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/Zoomer1"
+        android:layout_alignStart="@+id/Zoomer1"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/Prix"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:text="Etape 3: Ecris ton texte"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fontFamily="monospace"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/Précédent"
+        android:layout_alignEnd="@+id/Précédent"
+        android:layout_marginRight="55dp"
+        android:layout_marginEnd="55dp"
+        android:id="@+id/progressBar2"
+        android:indeterminate="false"
+        android:layout_height="7dp"
+        android:background="@android:color/holo_blue_dark" />
+
+</RelativeLayout>
